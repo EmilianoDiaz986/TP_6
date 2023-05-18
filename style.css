@@ -1,0 +1,137 @@
+
+	  /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #333;
+  color: #FFF;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.date {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.main-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  margin-right: 10px;
+}
+
+.main-menu li a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hamburger-icon {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger-icon span {
+  position: absolute;
+  height: 2px;
+  background-color: #FFF;
+  width: 100%;
+  left: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-icon span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-icon span:nth-child(3) {
+  bottom: 0;
+}
+
+/* Estilos de las secciones de noticias */
+/* Estilos para la versión de escritorio */
+.main-menu {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 1070px) {
+  .main-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+section {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+section h2 {
+  font-size: 20px;
+}
+
+section p {
+  margin-top: 5px;
+}
+
+section article {
+  margin-bottom: 20px;
+}
+
+section article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #EEE;
+  padding: 10px;
+  text-align: center;
+}
